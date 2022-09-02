@@ -1,0 +1,182 @@
+
+prática_1
+
+
+//Escrevar um algoritimo que leia o nome de um aluno e as notas das tres provas que eles obteve no semenstre.
+//No final informar o nome do aluno e a sua média 9aritimética 
+
+//lembre de limpar o console antes de rodar a média 
+
+//lembrar de retornar a média com duas casas decimais sinta-se livre para inserir detalhes relevantes.
+
+
+programa
+{ inclua biblioteca Matematica --> mat
+
+	
+	funcao inicio(){
+         real  nT1, nT2, nT3 , media
+         cadeia nome 
+         
+         
+	
+		
+		escreva("Nome do aluno:  ")
+	     leia(nome)
+
+	     escreva("Primeira nota: ")
+	     leia(nT1)
+
+	     escreva("Primeira nota: ")
+	     leia(nT2)
+
+	     escreva("/nPrimeira nota: ")
+	     leia(nT3)
+
+    
+     
+    media = (nT1 + nT2 + nT3) /3
+
+    escreva("A média do(A)", nome, " é ", media, ".")
+
+    se ( media >= 8 ){
+    	escreva(" O aluno (A) passou de ano! com média", mat.arredondar(media,2))
+    }
+
+    senao se (media <= 7 e media >= 6 )  {
+	escreva(" O aluno está na média. Com média: ", mat.arredondar(media,2))
+	}
+
+     senao {
+     	escreva(" Está de recuperação!")
+     }
+	
+   
+    
+	
+	
+	}
+	
+}
+
+
+prática_2
+
+// Escreva um programa que indique se o aluno foi aprovado ou não 
+//ler as n3 notas do usuário, calcular uma média e se 
+// o resultado da média for maior ou igual a 7, o aluno for aprovado 
+//senao, ele foi reprovado
+
+
+
+
+programa
+{
+	inclua biblioteca Matematica --> mat 
+	funcao inicio(){
+		
+		real n1, n2, n3, media
+		cadeia nome
+
+
+		
+		
+		escreva("\nEntre com sua nome:   ")
+		leia(nome)
+
+		
+		escreva("\nEntre com sua primeira nota:  ")
+		leia(n1)
+		escreva("\nEntre com sua segunda nota:  ")
+		leia(n2)
+		escreva("\nEntre com sua terceira nota:  ")
+		leia(n3)
+
+		media = (n1 + n2 + n3) / 3 
+
+  limpa()
+
+         se(media >= 7.0) {
+          escreva("\n Aluno:   ", nome , "foi aprovado com sucesso!!") 
+  }
+
+         senao se  (media >= 4 e media < 7) { 
+         	escreva("\n Aluno ",nome , "ficou de recuperação.\n")
+         } 
+
+         senao {
+         	escreva("Aluno:  ",nome, "sua média foi de:  ", mat.arredondar(media,2), "Reprovado")
+         }
+         
+         }
+}
+
+
+prática_3
+
+
+
+//informe a temperatura em celsius e converta a temperatura em fari
+
+
+programa
+{
+  
+	
+	funcao inicio()
+	{
+  real C, F
+
+	escreva(" Dite a temperatua em celsius:  ")
+	leia(C)
+
+	F=(9*C+160)/5 
+
+	 escreva("\nSua temperatura em fahrenheit é ", F )
+
+	
+	
+	}
+}
+
+
+pratica_4
+
+// Escreva um programa onde o usuário possa escolher entre um elogio, uma ofensa , ou sair do programa . A lista 
+// deverá ser clara e legível, e após a leitura da opção o console deverá ser limpo 
+
+
+programa
+
+{
+ 
+	
+	funcao inicio()
+	{
+	 inteiro  opcao
+	 
+
+	 escreva ("Digite:\n 1  para ofender\n 2 para elogiar\n 3 para sair do programa: ")
+	 leia(opcao)
+
+	 limpa()
+	 
+		se ( opcao == 1){
+			escreva("\nVocê é um BABACA!\n ")
+		}
+          senao se ( opcao == 2){
+			escreva("Você é DEMAIS!\n ")
+		}
+		senao se  ( opcao == 3){
+			escreva("\n Sair do programa... ")
+		}
+
+		senao {
+			escreva("Opção inválida" )
+		}	
+		
+}
+}
+
+pratica_5
+
